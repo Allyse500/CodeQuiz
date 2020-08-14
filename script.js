@@ -35,5 +35,10 @@ function hideButton() {
     //First Question Set
 function questionSet1() {
     let questionOne = document.getElementById('questions').innerHTML = 
-    "<p>Is Javascript the same as Java?</p>"
+    "<p>Is Javascript the same as Java?</p>";
+    questionOne.appendChild("<button>yes</button>");
+    questionOne.appendChild("<button>no</button>");
+
   }
+
+  
