@@ -39,14 +39,14 @@ function displayTime() {
 
   var timeEl = document.querySelector("#time");
   
-  var secondsLeft = 50;
+  var secondsLeft = 20;
   
   var displayTime = function () {
-      var timerInterval = setInterval(function() {
+       timerInterval = setInterval(function() {
         secondsLeft--;
         timeEl.textContent = secondsLeft;
     
-        if(secondsLeft === 0 || document.querySelector("#true1").value === "correct") {
+        if(secondsLeft === 0) {
           clearInterval(timerInterval);
           
           sendMessage();
@@ -89,15 +89,13 @@ document.getElementById("false1").addEventListener("click", questionSet2);
 document.getElementById("true1").addEventListener("click",incorrect);
 
 function incorrect() {
-  /*var timeFunction = displayTime();
-
-  function myStopFunction() {
-    clearInterval(timeFunction);
-  }
-
-  myStopFunction();'*/
-
-  clearInterval(displayTime);
+  clearInterval(timerInterval);
+  timeEl.style.display = "none";
+  setTimeout(function() {
+    var secondsLeft = 15;
+    //displayTime();
+    timeEl.style.display = "inline";
+},5000);
   wrong.style.display = "inline";
   question1.style.display = "none";
  // clearInterval(displayTime().timerInterval);
