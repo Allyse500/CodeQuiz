@@ -8,9 +8,48 @@
 </head>
 <body>
 <h1>Code Quiz Game!</h1>
-<p id = "questions"></p>
+
 <p id = "time"></p>
-<button id = "START">START</button>
+
+<div class = "question1">
+    <h2>Question 1</h2>
+    <p id = "question1">True/False: Javascript the same as Java.</p><br>
+        <button id = "true1" value = "incorrect">True</button> <br><br>
+        <button id = "false1" value = "correct">False</button>
+</div>
+
+<div class = "question2">
+    <h2>Question 2</h2>
+    <p id = "question2">True/False: querySelector() returns the first element that matches the specified css selectors.</p><br>
+        <button id = "true2">True</button> <br><br>
+        <button id = "false2">False</button>
+</div>
+
+<div class = "question3">
+    <h2>Question 3</h2>
+    <p id = "question3">True/False: if statments must always be accompanied by else statements to function.</p><br>
+        <button id = "true3">True</button> <br><br>
+        <button id = "false3">False</button>
+</div>
+
+<div class = "question4">
+    <h2>Question 4</h2>
+    <p id = "question4">True/False: This is the correct syntax to store a value into local storage: localStorage.setItem(key, value);</p><br>
+        <button id = "true4">True</button> <br><br>
+        <button id = "false4">False</button>
+</div>
+
+<div class = "question5">
+    <h2>Question 5</h2>
+    <p id = "question5">True/False: "let" can be used in lieu of "var" to declare a variable.</p><br>
+        <button id = "true5">True</button> <br><br>
+        <button id = "false5">False</button>
+</div>
+
+<p id = "correct">Correct!</p>
+<p id = "incorrect">Ouch. -5s =[.</p>
+
+<button id = "START" onclick="setTimeout(displayTime, 500);">START</button>
 <p id = "answers"></p>
 <script src="./script.js"></script>
 </body>

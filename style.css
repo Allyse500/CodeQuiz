@@ -1,12 +1,49 @@
 h1 {text-align: center;
 }
 
+h2 {text-align: center;
+}
+
 p {text-align: center;
 }
+
+#correct {position: relative;
+    left: 46%;   
+    font-style: italic;
+    font-size: 24px;
+    display: none;
+}
+
+#incorrect {position: relative;
+    left: 43%;   
+    font-size: 24px;
+    display: none;
+}
+
 
 button {background-color: rgb(253, 5, 212);
     position: relative;
     left: 47%;              
     }
-#time {text-align: right;
+#time {text-align: center;
     }
+
+.question1 {
+    display: none;
+}
+
+.question2 {
+    display: none;
+}
+
+.question3 {
+    display: none;
+}
+
+.question4 {
+    display: none;
+}
+
+.question5 {
+    display: none;
+}
