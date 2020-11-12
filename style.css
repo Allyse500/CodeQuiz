@@ -1,10 +1,13 @@
 h1 {text-align: center;
+    color: yellow;
 }
 
 h2 {text-align: center;
+    color: yellow;
 }
 
 p {text-align: center;
+    color: yellow;
 }
 
 #correct {position: relative;
@@ -20,30 +23,40 @@ p {text-align: center;
     display: none;
 }
 
-
+body{
+    background-image: url('backgroundPhoto.png');
+    background-size: 1268px 650px;
+    background-position-x: 25px;
+}
 button {background-color: rgb(253, 5, 212);
     position: relative;
     left: 47%;              
     }
 #time {text-align: center;
+    color: yellow;
     }
 
 .question1 {
     display: none;
+    color:yellow;
 }
 
 .question2 {
     display: none;
+    color: yellow;
 }
 
 .question3 {
     display: none;
+    color: yellow;
 }
 
 .question4 {
     display: none;
+    color: yellow;
 }
 
 .question5 {
     display: none;
+    color: yellow;
 }
